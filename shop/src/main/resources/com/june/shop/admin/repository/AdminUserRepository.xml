@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.june.shop.admin.repository.AdminUserRepository">
+
+  
+
+  <select id="getUserByLogin" parameterType="string" resultType="com.june.shop.admin.model.AdminUserInfo">
+    SELECT
+    	address
+    	,city
+        ,telephone  
+    FROM owners
+  </select>
+  
+  <select id="getUserRoleByLogin" parameterType="integer" resultType="com.june.shop.admin.model.AdminUserRoleInfo">
+    SELECT
+    	address
+    	,city
+        ,telephone  
+    FROM owners
+  </select>
+
+</mapper>
